@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="author" content="Emily Cinder">
+    <meta name="description" content="Contact information for Heavenly Hotsprings Resort">
+    <link rel="shortcut icon" href="C:\Users\lyser\OneDrive\Documents\Desktop\GIT 215\final\Final Project Design Option 1-20231002T021111Z-001\Final Project Design Option 1\images\favicon-1.ico" type="image/x-icon">
+    <link rel="icon" href="C:\Users\lyser\OneDrive\Documents\Desktop\GIT 215\final\Final Project Design Option 1-20231002T021111Z-001\Final Project Design Option 1\images\favicon-1.ico" type="image/x-icon">
+    <title>Heavenly Hotsprings Resort | Contact</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .content {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+    
+        .left-column {
+          flex: 1;
+        }
+    
+        .right-column {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+    
+        .right-column form {
+          text-align: left;
+        }
+    
+        .right-column label {
+          display: block;
+          margin-bottom: 10px;
+        }
+    
+        .right-column input[type="text"],
+        .right-column input[type="email"],
+        .right-column input[type="tel"],
+        .right-column textarea,
+        .right-column input[type="radio"],
+        .right-column button {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 15px;
+        }
+    
+        .right-column .contact-method label {
+          display: inline-block;
+          margin-right: 10px;
+        }
+    
+        .right-column .contact-method input[type="radio"] {
+          display: inline-block;
+        }
+      </style>
+</head>
+<body>
+
+    <header>
+        
+            <a href="#" aria-label="Heavenly Hotsprings Resort"></a>
+            <img src="C:\Users\lyser\OneDrive\Documents\Desktop\GIT 215\final\Final Project Design Option 1-20231002T021111Z-001\Final Project Design Option 1\images\swiss-valley.jpg" alt="" width="1440" height="560">
+            <div>
+                <h1>Heavenly Hotsprings Resort</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+          
+        
+        
+        
+    </header>
+
+    <main>
+        <div class="content">
+        <div class="left-column">
+              <h2>Contact Us</h2>
+              <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!<br>Required fields marked with a *</p>
+              <img src="C:\Users\lyser\OneDrive\Documents\Desktop\GIT 215\final\Final Project Design Option 1-20231002T021111Z-001\Final Project Design Option 1\images\swiss-peak.jpg" alt="swiss peak image">
+        </div>
+        <div class="right-column">
+              <form action="/submit" method="POST">
+             
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+                
+               
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+             
+                <label>Preferred Contact Method *</label>
+                <div class="contact-method">
+                  <label for="email-method">Email</label>
+                  <input type="radio" id="email-method" name="contact-method" value="email" required>
+                  
+                  <label for="phone-method">Phone</label>
+                  <input type="radio" id="phone-method" name="contact-method" value="phone" required>
+                </div>
+                
+                
+                <label for="comments">Comments *</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+                
+                
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+       
+
+
+
+    </main>
+
+   
+    <footer>
+        <p>Copyright © 2023 - Heavenly Hotsprings Resort</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>
